@@ -55,68 +55,20 @@ public class Main {
 		 linky.remove(5);
 		 
 //		 linky.get(4);
-		 
-//		 linky.removeLast();
+
 		 linky.printList();
-//		 System.out.println("\n========== ");
-//		 
-//		 linky.removeFirst();
-//		 linky.printList();
-//		 System.out.println("\n========== ");
-//		 
-//		 linky.removeLast();
-//		 linky.printList();
-//		 System.out.println("\n========== ");
-//		 
-//		 
-//		 linky.removeFirst();
-//		 linky.printList();
-//		 System.out.println("\n========== ");
-////		 
-//		 linky.removeLast();
-//		 linky.printList();
-//		 System.out.println("\n========== ");
-////		 
-//		 linky.removeFirst();
-//		 linky.printList();
-//		 System.out.println("\n========== ");
-//		 
+		 System.out.println("\n========== ");
+		 linky.reverse();
 		 
+		 linky.printList();
+		 System.out.println("\n========== ");
 		 
+//		 linky.remove(5);
 		 
-		 
-		 
-		 
-		 
-		 
-//		 linky.getLength();
+//		 linky.get(4);
+
 //		 linky.printList();
-//		 linky.removeLast();
-//		 System.out.println("\n========== ");
-//		 
-//		 linky.getLength();
-//		 linky.printList();
-//		 linky.removeLast();
-//		 System.out.println("\n========== ");
-//		 
-//		 linky.getLength();
-//		 linky.printList();
-//		 linky.removeLast();
-//		 System.out.println("\n========== ");
-//		 
-//		 linky.getLength();
-//		 linky.printList();
-//		 linky.removeLast();
-//		 System.out.println("\n========== ");
-//		 
-//		 linky.getLength();
-//		 linky.printList();
-//		 linky.removeLast();
-//		 System.out.println("\n========== ");
-//		 
-		 
-		 
-	
+
 		
 	}
 

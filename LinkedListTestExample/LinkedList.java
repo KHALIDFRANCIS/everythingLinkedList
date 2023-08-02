@@ -9,9 +9,6 @@ package LinkedListTestExample;
 //    Linked List:
 //    42
 
-
-
-
 public class LinkedList {
 //CREATE CLASS VARIABLES, NODE CLASS, AND CONSTRUCTOR HERE
 	
@@ -22,7 +19,8 @@ public class LinkedList {
 	
 	
 //	========================
-//	Node class
+//	Node class Constructor
+//	CONSTRUCTORS DO NOT TAKE VOIDS
 	public class Node{		//EVERY NODE MUS HAVE TWO THINGS
 		int value;			//THE VALUE THAT IT STORES
 		Node next;			//AND THE POINTER TO THE NEXT NODE
@@ -34,7 +32,8 @@ public class LinkedList {
 //	a node class was nested within a linked list class to make the code cleaner
 //	========================
 	
-//	Constructor
+//	Linked List Constructor 
+//	CONSTRUCTORS DO NOT TAKE VOIDS
 	public LinkedList(int value) {			//THE LINKED LIST MUST HAVE A CONSTRUCTOR
 		Node nodey = new Node(value);		//WITH AN INSTANTIED NODE
 		head = nodey;						//THE HEAD POINTS TO THE NEW NODE
@@ -248,16 +247,20 @@ public class LinkedList {
 		}
 	
 	public void reverse() {
-		for(int i = length-1;i >= 0;i--) {
-//			public Node get(int index);
-//			continue from 3:43
+		Node trav = head;		//this is the reference pointer
+		Node after = trav.next;	//this is the pointer for the node after
+		Node before = null;		//this is the pointer for the node before
+		head = tail;			//this is the initial flip
+		tail = trav;			//this is the initial flip
+		for(int i = 0; i < length;i++) {
+			after = trav.next;	//the after pointer points to the node after trav
+			trav.next = before;	//-trav- will then point backward
+			before = trav;		//-before- will point to -trav-
+			trav = after;		//-trav will point forward
+//			basically ater the pointing is reversed, all of the reference variables jump up a spot and the process repeats
+			
 		}
 	}
 	
 	}
 	
-	
-
-
-
-
